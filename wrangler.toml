@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "bbling.cc"
+CUSTOM_DOMAIN = "aaling.xin"
 
 [env.dev.vars]
 MODE = "debug"
@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
  routes = [
-   { pattern = "docker.bbling.cc", custom_domain = true },
-   { pattern = "quay.bbling.cc", custom_domain = true },
-   { pattern = "gcr.bbling.cc", custom_domain = true },
-   { pattern = "k8s-gcr.bbling.cc", custom_domain = true },
-   { pattern = "k8s.bbling.cc", custom_domain = true },
-   { pattern = "ghcr.bbling.cc", custom_domain = true },
-   { pattern = "cloudsmith.bbling.cc", custom_domain = true },
+   { pattern = "docker.aaling.xin", custom_domain = true },
+   { pattern = "quay.aaling.xin", custom_domain = true },
+   { pattern = "gcr.aaling.xin", custom_domain = true },
+   { pattern = "k8s-gcr.aaling.xin", custom_domain = true },
+   { pattern = "k8s.aaling.xin", custom_domain = true },
+   { pattern = "ghcr.aaling.xin", custom_domain = true },
+   { pattern = "cloudsmith.aaling.xin", custom_domain = true },
  ]
 
 [env.production.vars]
